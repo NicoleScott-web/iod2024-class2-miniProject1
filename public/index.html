@@ -13,31 +13,32 @@
   </head>
   <body>
     <template id="postTemplate">
-      <div class="card col-3">
-        <img class="image" alt="..." />
+      <div class="card col-4">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-post-body">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+          <h2 class="card-title">Card title</h2>
+          <h5 class="card-title2">Card title</h5>
+          <div class="card-post-body"></div>
+          <div class="card-post-body2"></div>
           <div class="row">
-            <button class="btn btn-danger card-remove">remove</button>
-            <button class="btn btn-primary">edit</button> 
+            <button class="btn btn-danger card-remove">Remove</button>
+            <button id="Edit"class="btn btn-primary card-remove2" >edit </button>
           </div>
         </div>
       </div>
     </template>
-    <h1>My posts</h1>
+    <h1>Sales Reps Report</h1>
     <div class="container">
       <form class="mb-3" onsubmit="onPostSubmit(event)">
-        <label for="titleInput" class="form-label">Title</label>
-        <input class="form-control" id="titleInput" />
-        <label for="bodyInput" class="form-label">Body</label>
-        <input class="form-control" id="bodyInput" placeholder="" />
+        <label for="titleInput" class="form-label">First Name</label>
+        <input class="form-control" id="titleInput"/>
+        <label for="titleInput" class="form-label">Last Name</label>
+        <input class="form-control" id="titleInput2" />
+        <label for="titleInput" class="form-label">Region</label>
+        <input class="form-control" id="titleInput3" placeholder="" />
+        <label for="bodyInput" class="form-label">Sales</label>
+        <input class="form-control" id="bodyInput2" placeholder="" />
         <input type="submit" class="btn btn-primary" />
       </form>
-
       <div class="row" id="card-list"></div>
     </div>
   </body>
